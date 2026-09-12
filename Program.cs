@@ -76,6 +76,20 @@
 
             #endregion
 
+            #region Question 7
+
+            static void AddBonusPagesByRef(ref int pages)
+            {
+                pages += 50;
+            }
+
+            int pages2 = 400;
+
+            AddBonusPagesByRef(ref pages2);
+
+            Console.WriteLine(pages2);
+
+            #endregion
         }
     }
 }
