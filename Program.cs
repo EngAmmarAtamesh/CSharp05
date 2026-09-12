@@ -105,6 +105,29 @@
             Console.WriteLine(prices3.Length);
 
             #endregion
+
+            #region Question Fun 1
+
+            static bool TryGetPrice(string title, out double price)
+            {
+                if (title == "Clean Code")
+                {
+                    price = 25.5;
+                    return true;
+                }
+
+                price = 0;
+                return false;
+            }
+
+            double bookPrice;
+
+            if (TryGetPrice("Clean Code", out bookPrice))
+            {
+                Console.WriteLine(bookPrice);
+            }
+
+            #endregion
         }
     }
 }
