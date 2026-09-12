@@ -149,6 +149,24 @@
 
             #endregion
 
+            #region Question Fun 4
+
+            static void PrintAllTitles(params string[] titles)
+            {
+                foreach (string title in titles)
+                {
+                    Console.WriteLine(title);
+                }
+            }
+
+            PrintAllTitles(
+                "Clean Code",
+                "The Pragmatic Programmer",
+                "C# in Depth"
+            );
+
+            #endregion
+
         }
     }
 }
