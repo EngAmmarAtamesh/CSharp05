@@ -1,5 +1,26 @@
 ﻿namespace C_BAsic05
 {
+    internal class Book
+    {
+        #region Question 1
+
+        private string password = "secret";
+
+        #endregion
+
+        #region Question 2
+
+        internal int copiesInStock = 5;
+
+        #endregion
+
+        #region Question 3
+
+        public string Title;
+
+        #endregion
+    }
+
     internal class Program
     {
         static void Main(string[] args)
@@ -167,6 +188,40 @@
 
             #endregion
 
+
+            #region Book Question 1
+
+            Book book = new Book();
+
+            // لا يمكن الوصول إلى password هنا
+            // Console.WriteLine(book.password);
+
+            // السبب:
+            // password معمول private
+            // والـ private لا يمكن الوصول إليه من خارج Book.
+
+            #endregion
+
+
+            #region Book Question 2
+
+            Console.WriteLine(book.copiesInStock);
+
+            // Output: 5
+            // internal يسمح بالوصول إليه من داخل نفس الـ Project / Assembly.
+
+            #endregion
+
+
+            #region Book Question 3
+
+            book.Title = "Clean Code";
+
+            Console.WriteLine(book.Title);
+
+            // Output: Clean Code
+
+            #endregion
         }
     }
 }
