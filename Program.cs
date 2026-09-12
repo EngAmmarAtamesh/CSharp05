@@ -143,6 +143,12 @@
 
             #endregion
 
+            #region Question Fun 3
+
+            PrintBookInfo(pages: 400, title: "C# Programming");
+
+            #endregion
+
         }
     }
 }
