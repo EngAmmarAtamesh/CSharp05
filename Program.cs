@@ -128,6 +128,21 @@
             }
 
             #endregion
+
+            #region Question Fun 2
+
+            static void PrintBookInfo(string title, int pages = 300)
+            {
+                Console.WriteLine("Title: " + title);
+                Console.WriteLine("Pages: " + pages);
+            }
+
+            PrintBookInfo("Clean Code");
+
+            PrintBookInfo("The Pragmatic Programmer", 352);
+
+            #endregion
+
         }
     }
 }
