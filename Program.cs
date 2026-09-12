@@ -60,6 +60,22 @@
             Console.WriteLine(pages);
 
             #endregion
+
+            #region Question 6
+
+            static void ApplyDiscount(double[] prices)
+            {
+                prices[0] -= 5;
+            }
+
+            double[] prices2 = { 25.5, 40.0 };
+
+            ApplyDiscount(prices2);
+
+            Console.WriteLine(prices2[0]);
+
+            #endregion
+
         }
     }
 }
