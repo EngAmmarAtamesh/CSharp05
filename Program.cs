@@ -45,6 +45,21 @@
             PrintBookTitle("Clean Code");
 
             #endregion
+
+            #region Question 5
+
+            static void AddBonusPages(int pages)
+            {
+                pages += 50;
+            }
+
+            int pages = 400;
+
+            AddBonusPages(pages);
+
+            Console.WriteLine(pages);
+
+            #endregion
         }
     }
 }
