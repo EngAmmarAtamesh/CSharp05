@@ -90,6 +90,21 @@
             Console.WriteLine(pages2);
 
             #endregion
+
+            #region Question 8
+
+            static void ReplaceArray(ref double[] prices)
+            {
+                prices = new double[] { 10.0, 12.5, 15.0 };
+            }
+
+            double[] prices3 = { 25.5, 40.0 };
+
+            ReplaceArray(ref prices3);
+
+            Console.WriteLine(prices3.Length);
+
+            #endregion
         }
     }
 }
